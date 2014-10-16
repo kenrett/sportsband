@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2477915511">
+    <data-source source="LOCAL" name="Rails sportsband: development" uuid="e311b13d-30c3-4fe1-92bb-86a9e4a84067">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sportsband_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails sportsband: test" uuid="f9c7a13f-8c8d-4d02-8fc2-2bdf1802e1f0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sportsband_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails sportsband: production" uuid="a1db7a2e-8ad2-4625-a35f-6d9396efe2ed">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:sportsband_production</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
