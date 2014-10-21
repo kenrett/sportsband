@@ -1,0 +1,8 @@
+<%= simple_form_for @song, url: songs_path, html: {class: 'form-horizontal', multipart: true } do |f| %>
+    <%= f.input :title %>
+    <%= f.input :composer %>
+    <%= f.input :arranger %>
+    <%= f.input :mp3_url %>
+    <%= f.input :number_of_parts %>
+    <%= f.button :submit %>
+<% end %>
