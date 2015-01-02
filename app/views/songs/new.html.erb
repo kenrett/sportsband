@@ -4,34 +4,3 @@
     <h1>Upload a New Song</h1>
   </div>
 </div>
-<script>
-    var clientId = '470814188955-mnc22nsgcvgcto1srqo33a407lmigi18.apps.googleusercontent.com';
-    var developerKey = 'AIzaSyDPIXCwSGye7JSw9ATzL6p4O9AbW8H3kF4';
-    var accessToken;
-    function onApiLoad() {
-        gapi.load('auth', authenticateWithGoogle);
-        gapi.load('picker');
-    }
-    function authenticateWithGoogle() {
-        window.gapi.auth.authorize({
-            'client_id': clientId,
-            'scope': ['https://www.googleapis.com/auth/drive']
-        }, handleAuthentication);
-    }
-    function handleAuthentication(result) {
-        if(result && !result.error) {
-            accessToken = result.access_token;
-            setupPicker();
-        }
-    }
-    function setupPicker() {
-        var picker = new google.picker.PickerBuilder()
-                .setOAuthToken(accessToken)
-                .setDeveloperKey(developerKey)
-                .addView(new google.picker.DocsUploadView())
-                .addView(new google.picker.DocsView())
-                .build();
-        picker.setVisible(true);
-    }
-</script>
-<script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>

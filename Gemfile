@@ -1,19 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.4'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'devise'
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'googleauth'
+gem 'google-api-client', '0.9.pre3'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'paperclip', '~> 4.2'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.2'
-gem "simple_form", "~> 3.0.2"
+gem 'simple_form', '~> 3.0.2'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
-
-
-
-
+gem 'byebug'
